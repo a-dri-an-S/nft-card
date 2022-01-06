@@ -1,6 +1,9 @@
+import nftImage from '../assets/image-equilibrium.jpg';
+import viewIcon from '../assets/icon-view.svg';
+
 const NFTImage = () => {
     return (
-        <div></div>
+        <img src={nftImage} alt="NFT-Equilibrium"/>
     );
 }
 
