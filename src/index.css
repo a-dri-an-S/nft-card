@@ -1,8 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+html {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --very-dark-blue: hsl(217, 54%, 11%);
+  --dark-blue: hsl(216, 50%, 16%);
+  --blue: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 100px;
+  background-color: var(--very-dark-blue);
+  font-family: 'Outfit', sans-serif;
+  color: var(--soft-blue);
+  font-size: 18px;
+  font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +24,125 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--dark-blue);
+  padding: 25px;
+  width: 325px;
+  height: auto;
+  border-radius: 18px;
+}
+
+.card-img-container {
+  position: relative;
+  width: 325px;
+  height: 325px;
+}
+
+.card-img {
+  width: 325px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card-link-overlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 325px;
+  height: 325px;
+  opacity: 0;
+  transition: .5s ease;
+  border-radius: 8px;
+}
+
+.card-link-overlay:hover {
+  background-color: var(--cyan);
+  opacity: .5;
+}
+
+.card-info {
+  border-bottom: 1px solid var(--blue);
+}
+
+.card-title {
+  font-size: 20px;
+  color: var(--white);
+  transition: .8s ease;
+}
+
+.card-title:hover {
+  color: var(--cyan);
+}
+
+.card-info-secondary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card-price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 400;
+  color: var(--cyan);
+}
+
+.card-price-img {
+  width: auto;
+  height: 25px;
+  padding-right: 5px;
+}
+
+.card-time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.card-time-img {
+  width: auto;
+  height: 25px;
+  padding-right: 5px;
+}
+
+.card-creator {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-creator-img {
+  width: 35px;
+  margin-right: 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.creator-link {
+  color: white;
+  text-decoration: none;
+  transition: .8s ease;
+}
+
+.creator-link:hover {
+  color: var(--cyan);
 }
