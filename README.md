@@ -24,8 +24,8 @@ Users should be able to:
 ### Screenshot
 
 ![Final](./images/final.png)
-![Classes](./images/css-classes.png)
-![Components](./images/components.png)
+![Classes](./images/css-classes.jpg)
+![Components](./images/components.jpg)
 
 ### Links
 
